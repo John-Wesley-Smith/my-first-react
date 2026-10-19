@@ -1,0 +1,129 @@
+
+/* Main page */
+.app {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+  margin: 0;
+  background-color: #f3e8ff;
+}
+
+/* Main heading */
+.app h1 {
+  text-align: center;
+  color: #6b21a8;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.app p {
+  text-align: center;
+  color: #666666;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* Input and Add button section */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+/* Input field */
+.input-section input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #d8b4fe;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.input-section input:focus {
+  border-color: #9333ea;
+  box-shadow: 0 0 5px rgba(147, 51, 234, 0.3);
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  background-color: #7e22ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #581c87;
+}
+
+/* Task list */
+.app ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual task */
+.app li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  margin-bottom: 10px;
+  background-color: #faf5ff;
+  border: 1px solid #e9d5ff;
+  border-radius: 8px;
+  color: #333333;
+  overflow-wrap: anywhere;
+}
+
+/* Task text */
+.app li span {
+  flex: 1;
+}
+
+/* Delete button */
+.app li button {
+  background-color: #dc2626;
+  flex-shrink: 0;
+}
+
+.app li button:hover {
+  background-color: #991b1b;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+  .app {
+    margin: 20px 12px;
+    padding: 20px;
+  }
+
+  .app h1 {
+    font-size: 23px;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+
+  .input-section button {
+    width: 100%;
+  }
+}
