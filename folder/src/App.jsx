@@ -7,6 +7,7 @@ function App() {
     "Learn Git",
     "Create a GitHub repository and link to account 2 successfully",
     "done",
+    "Completed"
   ]);
 
   const [newTask, setNewTask] = useState("");
